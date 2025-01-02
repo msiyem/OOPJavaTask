@@ -1,7 +1,7 @@
 import static java.lang.Math.sqrt;
 
 public class main{
-    public static void main(String[] args) {
+    public static void Main(String[] args) {
         int base=9,height=17;
         float pi=3.1416F;
         int radius=5;
