@@ -7,22 +7,20 @@ public class Main{
         int radius=5;
         float celsius = 32.6F;
         int arm=7;
-
         int a=3,b=4,c=5;
-
-        System.out.println("Aria of a triangle: " + calculateTriangle(base,height) );
-        System.out.println("Volume of a ball: " + calculateVolumeBall(pi,radius) );
+        System.out.println("Aria of a triangle: " + calculateTriangleArea(base,height) );
+        System.out.println("Volume of a ball: " + calculateVolumeOfBall(pi,radius) );
         System.out.println("Area of a circle: " + calculateCircle(pi,radius) );
-        System.out.println("Convert Celsius scale to Fahrenheit: " + convertCelsius2Fahrenheit(celsius));
+        System.out.println("Convert Celsius scale to Fahrenheit: " + convertCelsiusToFahrenheit(celsius));
         System.out.println("Area of a equilateral triangle: " + calculateEquilateralTriangle(arm));
         System.out.println("Aria of a triangle(2): " + calculateTriangle2(a, b, c) );
     }
 
-    public static double calculateTriangle(int base, int height){
+    public static double calculateTriangleArea(int base, int height){
         return 0.5*base*height;
     }
 
-    public static double calculateVolumeBall(float pi, int radius){
+    public static double calculateVolumeOfBall(float pi, int radius){
         return 4*pi*(radius*radius*radius)/3;
     }
 
@@ -30,7 +28,7 @@ public class Main{
         return pi*radius*radius;
     }
 
-    public static double convertCelsius2Fahrenheit(float celsius){
+    public static double convertCelsiusToFahrenheit(float celsius){
         return 32+(celsius*9/5);
     }
 
